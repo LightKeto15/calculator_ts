@@ -7,7 +7,7 @@ import TileNumber from '../components/TileNumber';
 import TileLongHistory from '../components/TileLongHistory';
 import styles from '../styles/MainStyle';
 
-const MainApp: React.FC = () => {
+function MainApp () {
   const [ans, setAns] = useState('');
   const [history, setHistory] = useState('');
   const [tempAns, setTempAns] = useState('');

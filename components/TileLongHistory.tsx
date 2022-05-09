@@ -7,7 +7,7 @@ interface Props {
   onPress: Function;
 }
 
-const TileLongHistory: React.FC<Props> = ({data, onPress}: Props) => {
+function TileLongHistory({data, onPress}: Props) {
   const onTilePress = () => {
     onPress(data);
   };
@@ -21,6 +21,6 @@ const TileLongHistory: React.FC<Props> = ({data, onPress}: Props) => {
       </TouchableOpacity>
     </View>
   );
-};
+}
 
 export default TileLongHistory;

@@ -6,7 +6,7 @@ interface Props {
   onPress: Function;
 }
 
-const TileNumber: React.FC<Props> = ({text, onPress}: Props) => {
+function TileNumber({text, onPress}: Props) {
   const onTilePress = () => {
     onPress(text);
   };
@@ -26,7 +26,7 @@ const TileNumber: React.FC<Props> = ({text, onPress}: Props) => {
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
